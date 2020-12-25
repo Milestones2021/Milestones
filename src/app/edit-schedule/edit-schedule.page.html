@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+    
+    
+        </ion-col>
+        <ion-col size="8" id="editscheduletitle"><ion-title>Edit task</ion-title> </ion-col>
+      </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-grid>
+    
+
+    <ion-row>
+      <ion-col>
+
+        <ion-button [routerLink]="['/schedule']" color="secondary">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+    
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">Schedule Title</ion-label>
+          <ion-input type="text" [(ngModel)]="schedule.ScheduleTitle"></ion-input>
+        </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+    
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">Schedule Description</ion-label>
+          <ion-input type="text" [(ngModel)]="schedule.ScheduleDesc"></ion-input>
+        </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+    <ion-row>
+      <ion-col>
+
+      <ion-item>
+        <ion-label position="floating">Start time</ion-label>
+        <ion-input type="text" [(ngModel)]="schedule.ScheduleStartTime"></ion-input>
+      </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">End time</ion-label>
+          <ion-input type="text" [(ngModel)]="schedule.ScheduleEndTime"></ion-input>
+        </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-button class="ion-padding" color="primary" expand="full" (click)="updateScheduleTask(schedule)">
+          Edit Schedule Task
+        </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+  </ion-grid>
+
+
+</ion-content>

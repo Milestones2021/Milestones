@@ -1,0 +1,75 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+      <ion-grid>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-title>Login</ion-title></ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+<ion-grid>
+
+<ion-row>
+  <ion-col>
+
+      <ion-button [routerLink]="['/home']" color="secondary">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+
+  </ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col>
+    
+    <ion-item>
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input type="email" [(ngModel)]="LogEmail"></ion-input>
+    </ion-item>
+
+  </ion-col>
+</ion-row>
+
+
+<ion-row>
+  <ion-col>
+    
+    <ion-item>
+      <ion-label position="floating">Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="LogPassword"></ion-input>
+    </ion-item>
+
+  </ion-col>
+</ion-row>
+
+
+
+
+<ion-row id="logcol" class="justify-content-center">
+
+  <ion-col size="12" id="logbtncol">
+    <ion-button color="primary" (click)="logUser()">Login</ion-button>
+  </ion-col>
+
+  <ion-col size="12" id="alreadylogcol">
+    <a [routerLink]="['/register']" >Not a user yet? Register from here.</a>
+  </ion-col>
+
+
+</ion-row>
+
+
+
+
+
+</ion-grid>
+
+</ion-content>
+
+

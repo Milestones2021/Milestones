@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+    
+        </ion-col>
+        <ion-col size="8" id="deleteaccounttitle"><ion-title> Account Deletion</ion-title> </ion-col>
+      </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    
+
+    <ion-row>
+      <ion-col>
+
+        <ion-button [routerLink]="['/dashboard']" color="secondary">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Please Read this carefully.</ion-card-title>
+          </ion-card-header>
+          
+          <ion-card-content>
+            <p>
+              This page is where a user can delete their user account information as well as any associated data that is stored
+              by Milestones. Please understand that, once deleted, the data cannot be recovered.
+              If you believe you arrived at this page by mistake, please click the back button to return back to the dashboard. If not, click "Yes, Continue" button to begin account deletion process.
+            </p>
+
+            <ion-card-content>
+              <ion-button color="danger" (click)="deleteuser()" ><ion-icon id="deleteaccbtn" name="close"></ion-icon>Yes, Continue</ion-button>
+            </ion-card-content>
+
+          </ion-card-content>
+        </ion-card>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+  
+
+    </ion-grid>
+
+
+
+
+
+
+</ion-content>

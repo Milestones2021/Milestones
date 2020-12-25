@@ -1,0 +1,135 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+
+            <ion-button (click)="SignOut()" color="tertiary">
+              <ion-icon slot="start" name="arrow-back"></ion-icon>
+              Sign Out
+            </ion-button>
+
+          </ion-col>
+          <ion-col size="8" id="dashboardtitle"><ion-title>Dashboard</ion-title></ion-col>
+        </ion-row>
+      </ion-grid>
+  
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+
+    <ion-grid>
+
+      <ion-row>
+        <ion-col>
+
+          <ion-card>
+            <ion-card-header> 
+              <ion-card-title>Welcome {{this.getCurrUser()}}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+          
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-card>
+              <ion-card-header>
+                <ion-card-title>DATE</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                  {{showDate()}}
+              </ion-card-content>
+          </ion-card>        
+        </ion-col>
+
+
+
+      <ion-col>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>TIME</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{time | date:'mediumTime'}}
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+      </ion-row>
+
+
+
+
+      <ion-row  row responsive-sm>
+        <ion-col>
+
+
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Today's Schedule</ion-card-title>
+            </ion-card-header>
+          
+
+
+            <ion-card-content>
+              <ion-button color="success" [routerLink]="['/schedule']" ><ion-icon id="schedulebtnlogo" name="calendar"></ion-icon> Go to Schedules.</ion-button>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+         
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Things to do</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ion-button color="light" [routerLink]="['/todolist']" ><ion-icon id="todolistbtnlogo" name="checkbox-outline"></ion-icon>Go to Todolist.</ion-button>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col>
+         
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Settings</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              <ion-button color="danger" [routerLink]="['/delete-account']" ><ion-icon id="deleteaccbtn" name="close"></ion-icon>Delete user Account.</ion-button>
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+      
+
+    </ion-grid>
+
+
+
+
+
+
+  </ion-content>
+
+
+

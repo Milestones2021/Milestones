@@ -1,0 +1,115 @@
+
+<ion-header [translucent]="true">
+<ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-col><ion-title>Home</ion-title></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-grid>
+
+    <ion-row id="homeloginregisterbtnset">
+
+      <ion-col>
+        <ion-button [routerLink]="['/login']">
+          <ion-icon slot="start" name="enter"></ion-icon>
+          Login
+        </ion-button>
+      </ion-col>
+
+      <ion-col>
+        <ion-button [routerLink]="['/register']">
+          <ion-icon slot="start" name="person-add"></ion-icon>
+          Register
+        </ion-button>
+      </ion-col>
+
+
+    </ion-row>
+
+
+    <ion-row>
+      
+      <ion-col>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Introduction</ion-card-subtitle>
+            <ion-card-title>What is Milestones?</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Milestones is a Proof of Concept-Android Application that is Designed to offer a
+            Time Management Application tailored to personal use without any fees or costs.
+          </ion-card-content>
+          <ion-card-content>
+            <a href="https://milestones2021.github.io/doccumentation.html"> Read our Documentation...</a>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+      <ion-col>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Tutorials</ion-card-subtitle>
+            <ion-card-title>New to Time Management?</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            That's ok. Learn all about Time Management with these tutorials
+            and seminars personally handpicked by us.
+          </ion-card-content>
+        <ion-card-content>
+            <a href="https://milestones2021.github.io/articles/welcome.html"> Read more...</a>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+
+      <ion-col>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Contact us</ion-card-subtitle>
+            <ion-card-title>Have a question? let us know</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Any application isn't fully perfect, Ours is no different.
+            We will be happy to hear your suggestions for our future releases.
+          </ion-card-content>
+          <ion-card-content>
+            <a href="mailto:hello.milestones@gmail.com"> Contact us...</a>
+          </ion-card-content>
+        </ion-card>
+
+
+      </ion-col>
+
+
+
+    </ion-row>
+
+
+
+  </ion-grid>
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title id="homefooter"><p>Made  with  ❤  by  Ytavx </p></ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+
+</ion-content>
+

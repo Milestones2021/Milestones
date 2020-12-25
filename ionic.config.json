@@ -1,0 +1,7 @@
+{
+  "name": "Milestones",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

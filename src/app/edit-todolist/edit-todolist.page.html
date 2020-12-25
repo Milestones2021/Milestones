@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="2">
+    
+    
+        </ion-col>
+        <ion-col size="8" id="edittodolist"><ion-title>Edit todolist</ion-title> </ion-col>
+      </ion-row>
+      </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+
+  <ion-grid>
+    
+
+    <ion-row>
+      <ion-col>
+
+        <ion-button [routerLink]="['/schedule']" color="secondary">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-item>
+          <ion-label position="floating">Schedule Title</ion-label>
+          <ion-input type="text" [(ngModel)]="todolist.TodolistTitle"></ion-input>
+        </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col>
+
+
+
+        <ion-item>
+          <ion-label position="floating">Schedule Description</ion-label>
+          <ion-input type="text" [(ngModel)]="todolist.TodolistDesc"></ion-input>
+        </ion-item>
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-list>
+          <ion-radio-group [(ngModel)]="todolist.TodolistState">
+            <ion-list-header>
+              <ion-label>Task finished?</ion-label>
+            </ion-list-header>
+        
+            <ion-item>
+              <ion-label>Unfinished</ion-label>
+              <ion-radio slot="start" value="unfinished"></ion-radio>
+            </ion-item>
+      
+            <ion-item>
+              <ion-label>Finished</ion-label>
+              <ion-radio slot="start" value="finished"></ion-radio>
+            </ion-item>
+      
+          </ion-radio-group>
+      </ion-list> 
+
+
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col>
+
+        <ion-button class="ion-padding" color="primary" expand="full" (click)="updateScheduleTask(todolist)">
+          Edit Todolist Task
+        </ion-button>
+
+
+      </ion-col>
+    </ion-row>
+    
+    </ion-grid>
+
+
+
+</ion-content>
